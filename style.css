@@ -1,0 +1,328 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+/* body{
+    background-color: #eee ;
+} */
+:root{
+    --primary-color: #2B3674;
+    --seconday-color: #FAFCFE;
+    --body-color: #E9EDF2;
+    --alert-color: #FDF4D1;
+    --dark-blue: #4318FF;
+    --mandatory: #FF1818;
+    --placeholder: #949DB9;
+}
+
+/* Add Employee */
+    .addEmployeeform{
+        position: absolute;
+        margin: 0px auto;
+        /* z-index: 1; */
+    }
+    .container {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 792px;
+        background-color: #FFF;
+        border-radius: 22px;
+    }
+    h3{
+        display: flex;
+        width: 218px;
+        height: 40px;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 0;
+        color: var(--primary-color);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.48px;
+    }
+    .header i{
+        padding: 8px 12px;
+        margin-bottom: 7px;
+        color: var(--dark-blue);
+        background-color: #F4F7FE;
+        border-radius: 10px;
+    }
+    .header i:hover{
+        background-color: #e2e5eb;
+    }
+    .close{
+        border: 1px solid black;
+    }
+    .upload-div{
+        border-radius: 13px;
+        border: 1px dashed #d1d4de;
+        background: #FAFCFE;
+        width: 100%;
+        max-width: 738px;
+        height: 134px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .upload-div input{
+        display: none;
+    }
+    .upload-div i{
+        font-size: 30px;
+        flex-shrink: 0;
+        color: var(--dark-blue);
+    }
+    .upload-div h5{
+        color: var(--dark-blue);
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: -0.32px;
+        padding-top: 3px;
+    }
+    .upload-div p{
+        color:#8F9BBA;
+        text-align: center;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px; 
+        letter-spacing: -0.24px;
+    }
+    .labels::after{
+        content: ' *';
+        color: var(--mandatory);
+    }
+    label{
+        color: var(--primary-color);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 100%;
+        letter-spacing: -0.28px;
+        padding-bottom: 10px;
+    }
+    .form-control::placeholder{
+        color: var(--placeholder);
+    }
+    .text-color{
+        color: var(--placeholder);
+    }
+    .form-control,.form-select{
+        border-radius: 16px;
+        border: 1px solid #B6BBC7;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -0.28px;
+        height: 38px;
+    }
+    input[type="radio"]#male:checked { 
+        background-color: var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+    }
+    input[type="radio"]#female:checked { 
+        background-color: var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+    }
+    .form-select:focus{
+        box-shadow: none;
+        outline: none;
+        border: 1px solid var(--dark-blue);
+    }
+    .form-control:focus{
+        box-shadow: none;
+        outline: none;
+        border: 1px solid var(--dark-blue);
+    }
+    .date{
+        color: var(--placeholder);
+    }
+    .form-check-input:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .form-check-input:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .buttons-div{
+        background-color: #FFF;
+        border-radius: 22px;
+        margin-top: 20px;
+    }
+    .cancel{
+        width: 100px;
+        height: 50px;
+        color: var(--primary-color);
+        background-color: #FAF9FF;
+        border-radius: 16px;
+    }
+    .cancel:hover{
+        color:var(--primary-color);
+    }
+    .add-employee{
+        color: #FFF;
+        background-color: var(--dark-blue);
+        border-radius: 16px;
+        border: unset;
+        border: 1px solid var(--dark-blue);
+    }
+    .add-employee:hover{
+        background-color: var(--dark-blue);
+        border: 1px solid var(--dark-blue);
+    }
+    .button{
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: -0.3px;
+    }
+/* END Add Employee */
+
+/* Media Query */
+@media(max-width:991px){
+}
+@media(max-width:768px){
+    .buttons{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .firstName{
+        padding-top: 16px;
+    }
+    .lastName{
+        padding-top: 16px;
+    }
+}
+@media(max-width:575px){
+    .mobile{
+        padding-top: 16px;
+    }
+    .gender{
+        padding-top: 16px;
+    }
+    .state{
+        padding-top: 16px;
+    }
+    .pin{
+        padding-top: 16px;
+    }
+}
+@media(max-width:370px){
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cancel{
+        order: 2;
+    }
+}
+/* END Media Query */
+
+/* Edit Employee */
+.photo{
+    width: 140px;
+    height: 134px;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 13px;
+    border: 1px dashed #B2BAD0;
+    background-color: #FAFCFE;
+}
+.employee-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.change-btn{
+    background-color: #EAE6FB;
+    width: 105px;
+    height: 40px;
+    border: unset;
+    border-radius: 16px;
+    color: var(--dark-blue);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+}
+.change-btn:hover{
+    border: 1px solid #B2BAD0;
+}
+.color{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.28px;
+}
+#change-dp{
+    display: none;
+}
+/* END Edit Employee */
+
+/* Delete Employee */
+.delete-Employee-width{
+    max-width: 692px;
+    width: 100%;
+}
+.delete-employee{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.36px;
+    padding-top: 15px;
+}
+.deleteFormButtons{
+    margin-top: 20px;
+    flex-direction: row;
+}
+.delete-btn{
+    background-color: #EB506C;
+    color: #FFF;
+    border-radius: 16px;
+}
+.delete-btn:hover{
+    background-color: #EB506C;
+    color: #FFF;
+}
+.DeleteFormContainer{
+    margin: 140px auto;
+    width: 100%;
+    max-width: 792px;
+    background-color: #FFF;
+    border-radius: 22px;
+}
+.deleteFormButtons{
+    justify-content: flex-end;
+    display: flex;    
+}
+.order-unset{
+    width: 100px;
+    height: 50px;
+    color: var(--primary-color);
+    background-color: #FAF9FF;
+    border-radius: 16px;
+}
+/* END Delete employee */

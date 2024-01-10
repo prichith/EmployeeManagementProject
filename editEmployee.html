@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Edit_Employee</title>
+</head>
+
+<body>
+        <div class="container p-4 row-sm-12 details det-width">
+                <div class="d-flex align-items-center header justify-content-between">
+                    <h3>Edit Employee</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
+            <div class="dp-change d-flex align-items-center gap-3">
+                <div class="photo">
+                    <img class="employee-img" src="https://scontent-del1-1.xx.fbcdn.net/v/t1.6435-9/41611365_1036665739845433_6861261189377163264_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7a1959&_nc_ohc=gCs3MK-vhasAX-txCb_&_nc_ht=scontent-del1-1.xx&oh=00_AfDJDF85PAFwi2gAP1vArYbS2XZq_49wKjRZfHjDxEZl6Q&oe=65800FA3"/>
+                </div>
+                <label for="change-dp" class="change-btn">
+                    change
+                    <input id="change-dp" type="file"/>
+                </label>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-12 col-md-2 col-lg-2">
+                    <label class="labels">Salutation</label>
+                    <select class="form-select text-color color" aria-label="Default select example">
+                        <option selected>select</option>
+                        <option value="1">Mr.</option>
+                        <option value="2">Ms.</option>
+                        <option value="3">Mrs.</option>
+                        <option value="4">Dr.</option>
+
+                    </select>
+                </div>
+
+                <div class="col-sm-6 col-md-5 col-lg-5 firstName">
+                    <label class="labels">First Name</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control color" placeholder="Prichith" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-5 col-lg-5 lastName">
+                    <label class="labels">Last Name</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control color" placeholder="C P" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label class="labels">Email Address</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="email" class="form-control color" placeholder="prichith@gmail.com" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 mobile">
+                    <label class="labels">Mobile Number</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="tel" class="form-control color" placeholder="enter mobile number" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label class="labels">Date of Birth</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="date" class="form-control color date" placeholder="select date of birth" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 gender">
+                    <label class="labels">Gender</label>
+                    <div class="pt-2">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input gender-col" type="radio" name="gender" id="male" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-md-12 col-lg-12">
+                    <label>Qualifications</label>
+                    <input type="text" class="form-control color" placeholder="enter qualifications" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <label class="labels">Address</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control color" placeholder="enter address" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label class="labels">Country</label>
+                    <select class="form-select text-color color" aria-label="Default select example">
+                        <option selected>select country</option>
+                        <option value="1">India</option>
+                        <option value="2">USA</option>
+                        <option value="3">Australia</option>
+                        <option value="4">UAE</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 state">
+                    <label class="labels">State</label>
+                    <select class="form-select text-color color" aria-label="Default select example">
+                        <option selected>select state</option>
+                        <option value="1">Kerala</option>
+                        <option value="2">Tamil nadu</option>
+                        <option value="3">karnataka</option>
+                        <option value="4">maharashtra</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <label class="labels">City</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control color" placeholder="enter city" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-6 col-lg-6 pin">
+                    <label class="labels">Pin/Zip</label>
+                    <div class="input-group flex-nowrap">
+                        <input type="text" class="form-control color" placeholder="enter zip/pin" aria-label="Username" aria-describedby="addon-wrapping">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row pt-3 px-4 buttons-div">
+                <div class="gap-2 d-md-flex justify-content-md-end buttons">
+                    <button class="btn me-md-2 cancel button" type="button">Cancel</button>
+                    <button class="btn btn-primary add-employee button px-4" type="button">Save Changes</button>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
